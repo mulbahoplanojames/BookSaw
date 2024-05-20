@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login Page</title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
+    <!--//todo ================================================================================== -->
+    <!-- //? The below codes are for the navigation section  -->
+    <nav
+      class="lg:px-20 lg:bg-white fixed top-0 z-10 flex items-center justify-between w-full px-4 py-4 bg-white shadow-xl"
+    >
+      <!--//! Link to the home page -->
+      <a href="/index.html" class="text-3xl font-bold"
+        >UNI<span class="text-primary">!DEV</span></a
+      >
+    </nav>
+    <!-- //? The Above codes are for the navigation section  -->
+
+    <!--//todo ================================================================================== -->
+    <section
+      class="place-items-center bg-slate-100 grid w-screen h-screen p-4 pt-24"
+    >
+      <!-- username  -->
+      <form
+        method=""
+        action=""
+        class="lg:w-[500px] md:w-[500px] w-full h-fit rounded-md py-5 px-5 shadow-2xl bg-white"
+      >
+        <div class="">
+          <label for="username" class="inline-block pb-3 text-lg"
+            >User Name</label
+          >
+          <input
+            type="email"
+            name="username"
+            class="focus:shadow-md focus:shadow-blue-500 w-full h-10 px-5 mb-5 bg-transparent border rounded-md outline-none"
+          />
+        </div>
+        <!-- password  -->
+        <div class="">
+          <label for="password" class="inline-block pb-3 text-lg"
+            >Password</label
+          >
+          <input
+            type="password"
+            name="password"
+            class="focus:shadow-md focus:shadow-blue-500 w-full h-10 px-5 mb-5 bg-transparent border rounded-md outline-none"
+          />
+        </div>
+
+        <div class="">
+          <button
+            type="submit"
+            class="bg-primary px-4 py-1 text-lg text-white rounded-md"
+          >
+            Submit
+          </button>
+          <span class="px-1 text-2xl">|</span>
+          <a href="#">Forget Password?</a>
+          <span class="px-1 text-2xl">|</span>
+          <a href="../html/register.html" class="hover:text-primary"
+            >New Student Sign Up</a
+          >
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

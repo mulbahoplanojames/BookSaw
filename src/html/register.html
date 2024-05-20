@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body class="bg-slate-500">
+    <!--//todo ================================================================================== -->
+    <!-- //? The below codes are for the navigation section  -->
+    <nav
+      class="lg:px-20 lg:bg-white fixed top-0 z-10 flex items-center justify-between w-full px-4 py-4 bg-white shadow-xl"
+    >
+      <!--//! Link to the home page -->
+      <a href="/" class="text-3xl font-bold"
+        >UNI<span class="text-primary">!DEV</span></a
+      >
+    </nav>
+    <!-- //? The Above codes are for the navigation section  -->
+
+    <!--//todo ================================================================================= -->
+
+    <section class="pt-32 pb-10">
+      <div class="w-[80%] mx-auto bg-white py-10 rounded-xl">
+        <h1 class="pb-3 text-5xl text-center">Application Form</h1>
+
+        <form method="post" id="form" class="px-5">
+          <!--//? web3from validate -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="562d6485-71c4-4390-9184-2c1cf99e08b5"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="New Submission from UNI!DEV Application Form"
+          />
+          <input type="checkbox" name="botcheck" id="" style="display: none" />
+
+          <!--//? first and last name  -->
+          <div class="input_wripper">
+            <input
+              type="text"
+              required
+              name="first_name"
+              placeholder="First Name*"
+              class="tw_input"
+            />
+            <input
+              type="text"
+              required
+              name="last_name"
+              placeholder="Last Name*"
+              class="tw_input"
+            />
+          </div>
+
+          <!--//? email and application date  -->
+          <div class="input_wripper">
+            <input
+              type="email"
+              required
+              name="email"
+              placeholder="Email*"
+              class="tw_input"
+            />
+            <input
+              type="text"
+              required
+              name="application_date"
+              onfocus="(this.type = 'datetime-local')"
+              placeholder="Application date*"
+              class="tw_input"
+            />
+          </div>
+
+          <!--//? Gender and Mobile Number  -->
+          <div class="input_wripper">
+            <input
+              type="tel"
+              required
+              name="mobile_number"
+              placeholder="Mobile Number*"
+              class="tw_input"
+            />
+            <select
+              onfocus="(this.type = '')"
+              name="gender"
+              required
+              placeholder="Gender*"
+              class="tw_input"
+            >
+              <option value="" disabled selected hidden class="text-slate-200">
+                Gender
+              </option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+
+          <!--//? parent name and parent mobile  -->
+          <div class="input_wripper">
+            <input
+              type="text"
+              required
+              name="parent_name"
+              placeholder="Parent Name*"
+              class="tw_input"
+            />
+            <input
+              type="tel"
+              required
+              name="parent_mobile"
+              placeholder="Parent Mobile*"
+              class="tw_input"
+            />
+          </div>
+
+          <!--//? Birth date and blood group  -->
+          <div class="input_wripper">
+            <input
+              type="text"
+              required
+              name="Birth_date"
+              onfocus="(this.type = 'date')"
+              placeholder="Birth Date*"
+              class="tw_input"
+            />
+            <input
+              type="text"
+              required
+              name="blood_group"
+              placeholder="Blood Group*"
+              class="tw_input"
+            />
+          </div>
+
+          <!--//? parent name and parent mobile  -->
+          <div class="input_wripper">
+            <input
+              type="text"
+              required
+              name="last_school_attended"
+              placeholder="Last School Attended"
+              class="tw_input"
+            />
+            <input
+              type="tel"
+              required
+              name="location"
+              placeholder="Location"
+              class="tw_input"
+            />
+          </div>
+
+          <!--//? Nationality and Course  -->
+          <div class="input_wripper">
+            <select
+              name="Country"
+              required
+              name="Country"
+              placeholder="Country"
+              class="tw_input"
+            >
+              <option value="" disabled selected hidden class="text-slate-200">
+                Country
+              </option>
+              <option value="male">Liberia</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Nigerial">Nigerial</option>
+              <option value="Rwanda">Rwanda</option>
+              <option value="South Sudan">South Sudan</option>
+              <option value="Chad">Chad</option>
+              <option value="Niger">Niger</option>
+              <option value="Uganda">Uganda</option>
+            </select>
+
+            <select
+              name="Course"
+              required
+              name="Course"
+              placeholder="Course"
+              class="tw_input"
+            >
+              <option value="" disabled selected hidden class="text-slate-200">
+                Course
+              </option>
+              <option value="School of Business">School of Business</option>
+              <option value="School of Economics">School of Economics</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Computer Science">School of Education</option>
+              <option value="School of LaW">School of Law</option>
+            </select>
+          </div>
+
+          <div class="pt-6">
+            <input
+              type="text"
+              required
+              name="Address"
+              placeholder="Address"
+              class="tw_input py-4"
+            />
+          </div>
+
+          <!--//? submit button  -->
+          <div class="text-center">
+            <button
+              type="submit"
+              class="bg-primary px-14 hover:opacity-70 py-1 mt-6 mr-5 text-lg text-white rounded-md"
+            >
+              Submit
+            </button>
+
+            <button
+              class="px-14 hover:opacity-70 py-1 mt-6 text-lg text-white bg-red-600 rounded-md"
+            >
+              Cancel
+            </button>
+          </div>
+
+          <div class="" id="result"></div>
+        </form>
+      </div>
+    </section>
+    <script src="../javascript/Web3form.js"></script>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>
