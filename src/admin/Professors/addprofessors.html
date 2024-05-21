@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="../css/output.css" />
+    <title>Add Professors</title>
+    <link rel="stylesheet" href="/src/css/output.css" />
 
     <!--//? bootstrap icons and font awesome links  -->
     <link
@@ -42,7 +42,9 @@
                 </summary>
                 <ul>
                   <li>
-                    <a href="#" class="focus:text-blue-600 text-base"
+                    <a
+                      href="/src/admin/admin-unidev-main.html"
+                      class="focus:text-blue-600 text-base"
                       >All Students</a
                     >
                   </li>
@@ -74,7 +76,7 @@
                 <ul>
                   <li>
                     <a
-                      href="/src/admin//Courses/allCourses.html"
+                      href="/src/admin/Courses/allCourses.html"
                       class="focus:text-blue-600 text-base"
                       >All Courses</a
                     >
@@ -98,7 +100,7 @@
             </li>
           </ul>
 
-          <!-- Departments Links  -->
+          <!--//? Departments Links  -->
           <ul class="menu bg-slate-100 w-full mx-auto">
             <li>
               <details onclick="open">
@@ -132,7 +134,7 @@
             </li>
           </ul>
 
-          <!-- Pro Links  -->
+          <!--//? Pro Links  -->
           <ul class="menu bg-slate-100 w-full mx-auto">
             <li>
               <details onclick="open">
@@ -142,15 +144,13 @@
                 <ul>
                   <li>
                     <a
-                      href="/src/admin/Professors/allProfessors.html"
+                      href="/src/admin/Professors/addprofessors.html"
                       class="focus:text-blue-600 text-base"
                       >All Professors</a
                     >
                   </li>
                   <li>
-                    <a
-                      href="/src/admin/Professors/addprofessors.html"
-                      class="focus:text-blue-600 text-base"
+                    <a href="#" class="focus:text-blue-600 text-base"
                       >Add Professors</a
                     >
                   </li>
@@ -200,7 +200,7 @@
             </li>
           </ul>
 
-          <!-- Logout  -->
+          <!--//? Logout  -->
           <ul class="menu bg-slate-100 w-full mx-auto mt-8">
             <li>
               <a
@@ -300,266 +300,204 @@
         <div
           class="breadcrumbs flex flex-wrap justify-between gap-5 px-4 pt-24 pb-10 text-sm"
         >
-          <h1 class="text-2xl">All Students</h1>
+          <h1 class="text-2xl">Add Professors</h1>
           <ul class="bg-[#e5e5e9] rounded-full px-6 py-3 text-base">
             <li>
               <a> <i class="bi bi-house-door-fill"></i>Home</a>
             </li>
             <li>
-              <a> Students</a>
+              <a> Professors</a>
             </li>
             <li>
-              <span>All Students</span>
+              <span>Add Professors</span>
             </li>
           </ul>
         </div>
 
-        <!--? The below codes are for the all students table -->
-        <div class="p-4 bg-white rounded-md w-[95%] mx-auto">
-          <h1 class="pb-3 text-base font-bold border-b-2 border-dotted">
-            All Students List
+        <!--? The below codes are for the Add Student form -->
+        <div class="w-[95%] mx-auto bg-white pt-5 pb-10 rounded-xl mb-10">
+          <h1 class="pb-3 pl-6 text-xl border-b-2 border-dotted">
+            Add Professors
           </h1>
 
-          <!--//? table will go here -->
-          <div class="overflow-x-auto">
-            <table class="table">
-              <!--//? table head -->
-              <thead>
-                <tr>
-                  <th>Roll No</th>
-                  <th>Name</th>
-                  <th>Department</th>
-                  <th>Mobile</th>
-                  <th>Email</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!--//todo row 1 -->
-                <tr>
-                  <th>18</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Computer Science</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <a href="../Students/editStudents.html">
-                      <button
-                        class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                      >
-                        <i
-                          class="bi bi-pen-fill hover:text-white text-green-700"
-                        ></i>
-                      </button>
-                    </a>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
-                <!--//todo row 2 -->
-                <tr>
-                  <th>82</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Social Science</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
-                <!--//todo row 3 -->
-                <tr>
-                  <th>76</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Internation Communication</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
-                <!--//todo row 4 -->
-                <tr>
-                  <th>65</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Economics and Finance</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
+          <form method="post" class="px-5">
+            <!--//? first and last name  -->
+            <div class="input_wripper">
+              <input
+                type="text"
+                required
+                name="first_name"
+                placeholder="First Name*"
+                class="tw_input2"
+              />
+              <input
+                type="text"
+                required
+                name="last_name"
+                placeholder="Last Name*"
+                class="tw_input2"
+              />
+            </div>
 
-                <!--//todo row 5 -->
-                <tr>
-                  <th>43</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Engineering science</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
+            <!--//? email and joining date  -->
+            <div class="input_wripper">
+              <input
+                type="email"
+                required
+                name="email"
+                placeholder="Email*"
+                class="tw_input2"
+              />
+              <input
+                type="text"
+                required
+                name="joining_date"
+                onfocus="(this.type = 'datetime-local')"
+                placeholder="Joining Date*"
+                class="tw_input2"
+              />
+            </div>
 
-                <!--//todo row 6 -->
-                <tr>
-                  <th>98</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Law Science</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
+            <!--//? password and confirm password  -->
+            <div class="input_wripper">
+              <input
+                type="password"
+                required
+                name="password"
+                placeholder="password*"
+                class="tw_input2"
+              />
+              <input
+                type="password"
+                required
+                name="confirm_password"
+                placeholder="Confirm Password*"
+                class="tw_input2"
+              />
+            </div>
 
-                <!--//todo row 7 -->
-                <tr>
-                  <th>34</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Business Studies</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <!--//? designation and department  -->
+            <div class="input_wripper">
+              <input
+                type="text"
+                required
+                name="designation"
+                placeholder="Designation*"
+                class="tw_input2"
+              />
+
+              <select
+                required
+                name="department"
+                placeholder="Department"
+                class="tw_input2"
+              >
+                <option
+                  value=""
+                  disabled
+                  selected
+                  hidden
+                  class="text-slate-200"
+                >
+                  Departments
+                </option>
+                <option value="School of Business">School of Business</option>
+                <option value="School of Economics">School of Economics</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Computer Science">School of Education</option>
+                <option value="School of LaW">School of Law</option>
+              </select>
+            </div>
+
+            <!--//? gender and mobile number  -->
+            <div class="input_wripper">
+              <select
+                required
+                name="gender"
+                placeholder="Gender"
+                class="tw_input2"
+              >
+                <option
+                  value=""
+                  disabled
+                  selected
+                  hidden
+                  class="text-slate-200"
+                >
+                  Gender
+                </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+              <input
+                type="tel"
+                required
+                name="monile_number"
+                placeholder="Mobile Number*"
+                class="tw_input2"
+              />
+            </div>
+
+            <!--//? Birth Date  -->
+            <div class="input_wripper">
+              <input
+                type="text"
+                onfocus="this.type = 'date'"
+                required
+                name="birth_date"
+                placeholder="Birth Date"
+                class="tw_input2"
+              />
+              <input
+                type="text"
+                onfocus="this.type = 'file'"
+                required
+                name="picture"
+                placeholder="Upload Profile Picture"
+                class="tw_input2 py-4"
+              />
+            </div>
+
+            <!--//? address  -->
+            <div class="pt-6">
+              <input
+                type="text"
+                required
+                name="Address"
+                placeholder="Address"
+                class="tw_input2 py-4"
+              />
+            </div>
+
+            <!--//? Education  -->
+            <div class="pt-6">
+              <input
+                type="text"
+                required
+                name="education"
+                placeholder="Education"
+                class="tw_input2 py-4"
+              />
+            </div>
+
+            <!--//? submit button  -->
+            <div class="text-center">
+              <button
+                type="submit"
+                class="bg-primary px-14 hover:opacity-70 py-1 mt-6 mr-5 text-lg text-white rounded-md"
+              >
+                Submit
+              </button>
+
+              <button
+                class="px-14 hover:opacity-70 py-1 mt-6 text-lg text-white bg-red-600 rounded-md"
+              >
+                Cancel
+              </button>
+            </div>
+
+            <div class="" id="result"></div>
+          </form>
         </div>
 
         <!--? the main content ends here -->

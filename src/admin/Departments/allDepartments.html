@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Courses</title>
-    <link rel="stylesheet" href="../css/output.css" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/src/css/output.css" />
 
     <!--//? bootstrap icons and font awesome links  -->
     <link
@@ -43,21 +43,21 @@
                 <ul>
                   <li>
                     <a
-                      href="../admin/admin-unidev-main.html"
+                      href="/src/admin/admin-unidev-main.html"
                       class="focus:text-blue-600 text-base"
                       >All Students</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Students/addStudents.html"
+                      href="/src/admin/Students/addStudents.html"
                       class="focus:text-blue-600 text-base"
                       >Add Student</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Students/editStudents.html"
+                      href="/src/admin/Students/editStudents.html"
                       class="focus:text-blue-600 text-base"
                       >Edit Student</a
                     >
@@ -75,20 +75,22 @@
                 </summary>
                 <ul>
                   <li>
-                    <a href="#" class="focus:text-blue-600 text-base"
+                    <a
+                      href="/src/admin/Courses/allCourses.html"
+                      class="focus:text-blue-600 text-base"
                       >All Courses</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Courses/addCourse.html"
+                      href="/src/admin/Courses/addCourse.html"
                       class="focus:text-blue-600 text-base"
                       >Add Courses</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Courses/editCourse.html"
+                      href="/src/admin/Courses/editCourses.html"
                       class="focus:text-blue-600 text-base"
                       >Edit Courses</a
                     >
@@ -107,22 +109,20 @@
                 </summary>
                 <ul>
                   <li>
-                    <a
-                      href="../Departments/allDepartments.html"
-                      class="focus:text-blue-600 text-base"
+                    <a href="#" class="focus:text-blue-600 text-base"
                       >All Departments</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Departments/addDepartments.html"
+                      href="/src/admin/Departments/addDepartments.html"
                       class="focus:text-blue-600 text-base"
                       >Add Departments</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Departments/editDepartments.html"
+                      href="/src/admin/Departments/editDepartments.html"
                       class="focus:text-blue-600 text-base"
                       >Edit Departments</a
                     >
@@ -142,21 +142,21 @@
                 <ul>
                   <li>
                     <a
-                      href="../Professors/allProfessors.html"
+                      href="/src/admin/Professors/addprofessors.html"
                       class="focus:text-blue-600 text-base"
                       >All Professors</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Professors/addprofessors.html"
+                      href="/src/admin/Professors/addprofessors.html"
                       class="focus:text-blue-600 text-base"
                       >Add Professors</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Professors/editProfessors.html"
+                      href="/src/admin/Professors/editProfessors.html"
                       class="focus:text-blue-600 text-base"
                       >Edit Professors</a
                     >
@@ -176,21 +176,21 @@
                 <ul>
                   <li>
                     <a
-                      href="../Fees/feesCollection.html"
+                      href="/src/admin/Fees/feesCollection.html"
                       class="focus:text-blue-600 text-base"
                       >Fees Collection</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Fees/addFees.html"
+                      href="/src/admin/Fees/addFees.html"
                       class="focus:text-blue-600 text-base"
                       >Add Fees</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Fees/feesreciept.html"
+                      href="/src/admin/Fees/feesreciept.html"
                       class="focus:text-blue-600 text-base"
                       >Fees Receipt</a
                     >
@@ -300,189 +300,223 @@
         <div
           class="breadcrumbs flex flex-wrap justify-between gap-5 px-4 pt-24 pb-10 text-sm"
         >
-          <h1 class="text-2xl">All Courses</h1>
+          <h1 class="text-2xl">Departments List</h1>
           <ul class="bg-[#e5e5e9] rounded-full px-6 py-3 text-base">
             <li>
               <a> <i class="bi bi-house-door-fill"></i>Home</a>
             </li>
             <li>
-              <a> Courses</a>
+              <a> Departments</a>
             </li>
             <li>
-              <span>All Courses</span>
+              <span>All Departments</span>
             </li>
           </ul>
         </div>
 
-        <!--? The below codes are for the All courses -->
-
-        <div class="h-fit w-[95%] bg-white rounded-lg mx-auto mb-8">
-          <h1 class="px-6 py-2 text-xl font-bold border-b-2 border-dotted">
-            All Courses
+        <!--? The below codes are for the all students table -->
+        <div class="p-4 bg-white rounded-md w-[95%] mx-auto mb-6">
+          <h1 class="pb-3 text-base font-bold border-b-2 border-dotted">
+            Departments List
           </h1>
 
-          <div
-            class="lg:grid-cols-4 md:grid-cols-2 grid grid-cols-1 gap-5 px-8 pb-6 mt-5"
+          <!-- add button  -->
+          <a
+            href="../Departments/addDepartments.html"
+            class="inline-block px-3 py-1 mt-5 mb-6 text-base text-white bg-blue-400 rounded-md"
           >
-            <!--//? course card 1 -->
-            <div class="h-fit w-[210px] px-1 border-[2px]">
-              <div class="w-full h-[120px] bg-blue-700 mb-2 overflow-hidden">
-                <img
-                  src="../Images/COMPUTER-SCIENCE.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <h1 class="pb-2 pl-3 text-xl">PHP Development Course</h1>
-              <p class="pb-3 pl-3">Dureation: 3 Months</p>
-              <p class="pb-3 pl-3">Professor: Peter John</p>
-              <p class="pb-3 pl-3">Students: 120+</p>
-              <button
-                class="px-4 py-1 mb-3 text-lg text-white bg-blue-500 rounded-sm shadow-md"
-              >
-                Read More
-              </button>
-            </div>
+            Add New +
+          </a>
 
-            <!--//? course card 2 -->
-            <div class="h-fit w-[210px] px-1 border-[2px]">
-              <div class="w-full h-[120px] bg-blue-700 mb-2 overflow-hidden">
-                <img
-                  src="../Images/connection_logo.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <h1 class="pb-2 pl-3 text-xl">Business Stratigics</h1>
-              <p class="pb-3 pl-3">Dureation: 1.5 Months</p>
-              <p class="pb-3 pl-3">Professor: Mulbah Richard</p>
-              <p class="pb-3 pl-3">Students: 150+</p>
-              <button
-                class="px-4 py-1 mb-3 text-lg text-white bg-blue-500 rounded-sm shadow-md"
-              >
-                Read More
-              </button>
-            </div>
+          <!--//? table will go here -->
+          <div class="mt-10 overflow-x-auto">
+            <table class="table">
+              <!--//? table head -->
+              <thead>
+                <tr>
+                  <th>Roll No</th>
+                  <th>Dept.Name</th>
+                  <th>Heap Of Dept.</th>
+                  <th>Phone</th>
+                  <th>Email</th>
+                  <th>Starting Year</th>
+                  <th>Student Capacity</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!--//todo row 1 -->
+                <tr>
+                  <th>1</th>
+                  <td>Computer Science</td>
+                  <td>Dr. Oplano Mulbah</td>
+                  <td>+25079167552</td>
+                  <td>student@gmail.com</td>
+                  <td>1989</td>
+                  <td>300</td>
+                  <th>
+                    <button
+                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
+                    >
+                      <i
+                        class="bi bi-pen-fill hover:text-white text-green-700"
+                      ></i>
+                    </button>
+                    <button
+                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
+                    >
+                      <i class="bi bi-trash3 text-red-700"></i>
+                    </button>
+                  </th>
+                </tr>
+                <!--//todo row 2 -->
+                <tr>
+                  <th>2</th>
+                  <td>School of Engineering</td>
+                  <td>Dr. abdalla Hassen</td>
+                  <td>+25079167552</td>
+                  <td>abdalla@gmail.com</td>
+                  <td>1997</td>
+                  <td>100</td>
+                  <th>
+                    <button
+                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
+                    >
+                      <i
+                        class="bi bi-pen-fill hover:text-white text-green-700"
+                      ></i>
+                    </button>
+                    <button
+                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
+                    >
+                      <i class="bi bi-trash3 text-red-700"></i>
+                    </button>
+                  </th>
+                </tr>
+                <!--//todo row 3 -->
+                <tr>
+                  <th>3</th>
+                  <td>School of Business</td>
+                  <td>Dr. Wilma Williams</td>
+                  <td>+25079167552</td>
+                  <td>wilma@gmail.com</td>
+                  <td>1999</td>
+                  <td>150</td>
+                  <th>
+                    <button
+                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
+                    >
+                      <i
+                        class="bi bi-pen-fill hover:text-white text-green-700"
+                      ></i>
+                    </button>
+                    <button
+                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
+                    >
+                      <i class="bi bi-trash3 text-red-700"></i>
+                    </button>
+                  </th>
+                </tr>
+                <!--//todo row 4 -->
+                <tr>
+                  <th>4</th>
+                  <td>International Religion</td>
+                  <td>Dr. Richard Hernandez</td>
+                  <td>+25079167552</td>
+                  <td>richard@gmail.com</td>
+                  <td>2000</td>
+                  <td>90</td>
+                  <th>
+                    <button
+                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
+                    >
+                      <i
+                        class="bi bi-pen-fill hover:text-white text-green-700"
+                      ></i>
+                    </button>
+                    <button
+                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
+                    >
+                      <i class="bi bi-trash3 text-red-700"></i>
+                    </button>
+                  </th>
+                </tr>
 
-            <!--//? course card 3 -->
-            <div class="h-fit w-[210px] px-1 border-[2px]">
-              <div class="w-full h-[120px] bg-blue-700 mb-2 overflow-hidden">
-                <img
-                  src="../Images/LAW.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <h1 class="pb-2 pl-3 text-xl">Ethic and Sociology</h1>
-              <p class="pb-3 pl-3">Dureation: 2 Months</p>
-              <p class="pb-3 pl-3">Professor: Mercy Lewsis</p>
-              <p class="pb-3 pl-3">Students: 200+</p>
-              <button
-                class="px-4 py-1 mb-3 text-lg text-white bg-blue-500 rounded-sm shadow-md"
-              >
-                Read More
-              </button>
-            </div>
+                <!--//todo row 5 -->
+                <tr>
+                  <th>5</th>
+                  <td>School Of Education</td>
+                  <td>Dr. Solomon Elkhsdar</td>
+                  <td>+25079167552</td>
+                  <td>solomon@gmail.com</td>
+                  <td>1996</td>
+                  <td>400</td>
+                  <th>
+                    <button
+                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
+                    >
+                      <i
+                        class="bi bi-pen-fill hover:text-white text-green-700"
+                      ></i>
+                    </button>
+                    <button
+                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
+                    >
+                      <i class="bi bi-trash3 text-red-700"></i>
+                    </button>
+                  </th>
+                </tr>
 
-            <!--//? course card 4 -->
-            <div class="h-fit w-[210px] px-1 border-[2px]">
-              <div class="w-full h-[120px] bg-blue-700 mb-2 overflow-hidden">
-                <img
-                  src="../Images/IR.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <h1 class="pb-2 pl-3 text-xl">International Business Studies</h1>
-              <p class="pb-3 pl-3">Dureation: 2.5 Months</p>
-              <p class="pb-3 pl-3">Professor: Oplah Mulbah</p>
-              <p class="pb-3 pl-3">Students: 120+</p>
-              <button
-                class="px-4 py-1 mb-3 text-lg text-white bg-blue-500 rounded-sm shadow-md"
-              >
-                Read More
-              </button>
-            </div>
-
-            <!--//? course card 5 -->
-            <div class="h-fit w-[210px] px-1 border-[2px]">
-              <div class="w-full h-[120px] bg-blue-700 mb-2 overflow-hidden">
-                <img
-                  src="../Images/EBS.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <h1 class="pb-2 pl-3 text-xl">Finance Management</h1>
-              <p class="pb-3 pl-3">Dureation: 2 Months</p>
-              <p class="pb-3 pl-3">Professor: Peter John</p>
-              <p class="pb-3 pl-3">Students: 120+</p>
-              <button
-                class="px-4 py-1 mb-3 text-lg text-white bg-blue-500 rounded-sm shadow-md"
-              >
-                Read More
-              </button>
-            </div>
-
-            <!--//? course card 6 -->
-            <div class="h-fit w-[210px] px-1 border-[2px]">
-              <div class="w-full h-[120px] bg-blue-700 mb-2 overflow-hidden">
-                <img
-                  src="../Images/EDUCATION-text-1-1536x1023.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <h1 class="pb-2 pl-3 text-xl">Education in Physics</h1>
-              <p class="pb-3 pl-3">Dureation: 5 Months</p>
-              <p class="pb-3 pl-3">Professor: Peter John</p>
-              <p class="pb-3 pl-3">Students: 50+</p>
-              <button
-                class="px-4 py-1 mb-3 text-lg text-white bg-blue-500 rounded-sm shadow-md"
-              >
-                Read More
-              </button>
-            </div>
-
-            <!--//? course card 7 -->
-            <div class="h-fit w-[210px] px-1 border-[2px]">
-              <div class="w-full h-[120px] bg-blue-700 mb-2 overflow-hidden">
-                <img
-                  src="../Images/civil.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <h1 class="pb-2 pl-3 text-xl">PHP Development Course</h1>
-              <p class="pb-3 pl-3">Dureation: 3 Months</p>
-              <p class="pb-3 pl-3">Professor: Peter John</p>
-              <p class="pb-3 pl-3">Students: 120+</p>
-              <button
-                class="px-4 py-1 mb-3 text-lg text-white bg-blue-500 rounded-sm shadow-md"
-              >
-                Read More
-              </button>
-            </div>
-
-            <!--//? course card 8 -->
-            <div class="h-fit w-[210px] px-1 border-[2px]">
-              <div class="w-full h-[120px] bg-blue-700 mb-2 overflow-hidden">
-                <img
-                  src="../Images/COMPUTER-SCIENCE.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <h1 class="pb-2 pl-3 text-xl">Introduction to Public Law</h1>
-              <p class="pb-3 pl-3">Dureation: 2 Months</p>
-              <p class="pb-3 pl-3">Professor: James Morlsj</p>
-              <p class="pb-3 pl-3">Students: 70+</p>
-              <button
-                class="px-4 py-1 mb-3 text-lg text-white bg-blue-500 rounded-sm shadow-md"
-              >
-                Read More
-              </button>
-            </div>
+                <!--//todo row 6 -->
+                <tr>
+                  <th>6</th>
+                  <td>Contruction Engineering</td>
+                  <td>Dr. Jerry BOndo</td>
+                  <td>+25079167552</td>
+                  <td>jerry@gmail.com</td>
+                  <td>1989</td>
+                  <td>300</td>
+                  <th>
+                    <button
+                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
+                    >
+                      <i
+                        class="bi bi-pen-fill hover:text-white text-green-700"
+                      ></i>
+                    </button>
+                    <button
+                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
+                    >
+                      <i class="bi bi-trash3 text-red-700"></i>
+                    </button>
+                  </th>
+                </tr>
+                <!--//todo row 7 -->
+                <tr>
+                  <th>7</th>
+                  <td>Electic Engineering</td>
+                  <td>Dr. Eric Pewee</td>
+                  <td>+25079167552</td>
+                  <td>eric@gmail.com</td>
+                  <td>1989</td>
+                  <td>210</td>
+                  <th>
+                    <button
+                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
+                    >
+                      <i
+                        class="bi bi-pen-fill hover:text-white text-green-700"
+                      ></i>
+                    </button>
+                    <button
+                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
+                    >
+                      <i class="bi bi-trash3 text-red-700"></i>
+                    </button>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 

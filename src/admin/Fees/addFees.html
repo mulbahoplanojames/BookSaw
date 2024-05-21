@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add Professors</title>
-    <link rel="stylesheet" href="../css/output.css" />
+    <title>Add Fees</title>
+    <link rel="stylesheet" href="/src/css/output.css" />
 
     <!--//? bootstrap icons and font awesome links  -->
     <link
@@ -43,19 +43,21 @@
                 <ul>
                   <li>
                     <a
-                      href="../admin/admin-unidev-main.html"
+                      href="/src/admin/admin-unidev-main.html"
                       class="focus:text-blue-600 text-base"
                       >All Students</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="focus:text-blue-600 text-base"
+                    <a
+                      href="/src/admin/Students/addStudents.html"
+                      class="focus:text-blue-600 text-base"
                       >Add Student</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Students/editStudents.html"
+                      href="/src/admin/Students/editStudents.html"
                       class="focus:text-blue-600 text-base"
                       >Edit Student</a
                     >
@@ -74,21 +76,21 @@
                 <ul>
                   <li>
                     <a
-                      href="../Courses/allCourses.html"
+                      href="/src/admin/Courses/allCourses.html"
                       class="focus:text-blue-600 text-base"
                       >All Courses</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Courses/addCourses.html"
+                      href="/src/admin/Courses/addCourse.html"
                       class="focus:text-blue-600 text-base"
                       >Add Courses</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Courses/editCourses.html"
+                      href="/src/admin/Courses/editCourses.html"
                       class="focus:text-blue-600 text-base"
                       >Edit Courses</a
                     >
@@ -108,21 +110,21 @@
                 <ul>
                   <li>
                     <a
-                      href="../Departments/allDepartments.html"
+                      href="/src/admin/Departments/allDepartments.html"
                       class="focus:text-blue-600 text-base"
                       >All Departments</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Departments/addDepartments.html"
+                      href="/src/admin/Departments/addDepartments.html"
                       class="focus:text-blue-600 text-base"
                       >Add Departments</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Departments/editDepartments.html"
+                      href="/src/admin/Departments/editDepartments.html"
                       class="focus:text-blue-600 text-base"
                       >Edit Departments</a
                     >
@@ -142,20 +144,22 @@
                 <ul>
                   <li>
                     <a
-                      href="../Professors/allProfessors.html"
+                      href="/src/admin/Professors/addprofessors.html"
                       class="focus:text-blue-600 text-base"
                       >All Professors</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Professors/addprofessors.html"
+                      href="/src/admin/Professors/addprofessors.html"
                       class="focus:text-blue-600 text-base"
                       >Add Professors</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="focus:text-blue-600 text-base"
+                    <a
+                      href="/src/admin/Professors/editProfessors.html"
+                      class="focus:text-blue-600 text-base"
                       >Edit Professors</a
                     >
                   </li>
@@ -174,22 +178,20 @@
                 <ul>
                   <li>
                     <a
-                      href="../Fees/feesCollection.html"
+                      href="/src/admin/Fees/feesCollection.html"
                       class="focus:text-blue-600 text-base"
                       >Fees Collection</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Fees/addFees.html"
+                      href="/src/admin/Fees/addFees.html"
                       class="focus:text-blue-600 text-base"
                       >Add Fees</a
                     >
                   </li>
                   <li>
-                    <a
-                      href="../Fees/feesreciept.html"
-                      class="focus:text-blue-600 text-base"
+                    <a href="#" class="focus:text-blue-600 text-base"
                       >Fees Receipt</a
                     >
                   </li>
@@ -210,7 +212,6 @@
           </ul>
         </div>
       </aside>
-
       <!--//? The below codes are for the main content section  -->
       <div class="bg-[#eaeef3] col-span-10 overflow-y-auto">
         <!--//? nav bar  -->
@@ -298,104 +299,50 @@
         <div
           class="breadcrumbs flex flex-wrap justify-between gap-5 px-4 pt-24 pb-10 text-sm"
         >
-          <h1 class="text-2xl">Add Professors</h1>
+          <h1 class="text-2xl">Add Fees</h1>
           <ul class="bg-[#e5e5e9] rounded-full px-6 py-3 text-base">
             <li>
               <a> <i class="bi bi-house-door-fill"></i>Home</a>
             </li>
             <li>
-              <a> Professors</a>
+              <a>Fees</a>
             </li>
             <li>
-              <span>Add Professors</span>
+              <span>Add Fees</span>
             </li>
           </ul>
         </div>
 
         <!--? The below codes are for the Add Student form -->
         <div class="w-[95%] mx-auto bg-white pt-5 pb-10 rounded-xl mb-10">
-          <h1 class="pb-3 pl-6 text-xl border-b-2 border-dotted">
-            Add Professors
-          </h1>
+          <h1 class="pb-3 pl-6 text-xl border-b-2 border-dotted">Add Fees</h1>
 
-          <form method="post" class="px-5">
-            <!--//? first and last name  -->
+          <form method="" class="px-5">
+            <!--//? roll number and Student name  -->
             <div class="input_wripper">
               <input
                 type="text"
                 required
-                value="Oplano"
-                name="first_name"
-                placeholder="First Name*"
+                name="rolll_number"
+                placeholder="Roll Number*"
                 class="tw_input2"
               />
               <input
                 type="text"
                 required
-                value="Mulbah"
-                name="last_name"
-                placeholder="Last Name*"
+                name="student_name"
+                placeholder="Student Name*"
                 class="tw_input2"
               />
             </div>
 
-            <!--//? email and joining date  -->
+            <!--//? Department and Class  -->
             <div class="input_wripper">
-              <input
-                type="email"
-                required
-                value="jamesmulbah@gmail.com"
-                name="email"
-                placeholder="Email*"
-                class="tw_input2"
-              />
-              <input
-                type="text"
-                required
-                value="2022-01-01"
-                name="joining_date"
-                onfocus="(this.type = 'datetime-local')"
-                placeholder="Joining Date*"
-                class="tw_input2"
-              />
-            </div>
-
-            <!--//? password and confirm password  -->
-            <div class="input_wripper">
-              <input
-                type="password"
-                required
-                value="12345678"
-                name="password"
-                placeholder="password*"
-                class="tw_input2"
-              />
-              <input
-                type="password"
-                required
-                value="12345678"
-                name="confirm_password"
-                placeholder="Confirm Password*"
-                class="tw_input2"
-              />
-            </div>
-
-            <!--//? designation and department  -->
-            <div class="input_wripper">
-              <input
-                type="text"
-                required
-                value="Oplano Mulbah"
-                name="designation"
-                placeholder="Designation*"
-                class="tw_input2"
-              />
-
               <select
+                onfocus="(this.type = '')"
+                name="professor_name"
                 required
-                name="department"
-                value="Computer Science"
-                placeholder="Department"
+                placeholder="Professor Name*"
                 class="tw_input2"
               >
                 <option
@@ -405,23 +352,23 @@
                   hidden
                   class="text-slate-200"
                 >
-                  Departments
+                  Department/Class
                 </option>
-                <option value="School of Business">School of Business</option>
-                <option value="School of Economics">School of Economics</option>
-                <option value="Computer Science">Computer Science</option>
-                <option value="Computer Science">School of Education</option>
-                <option value="School of LaW">School of Law</option>
+                <option value="Computer Sciencs">Computer Sciencs</option>
+                <option value="Social Sciences">Social Sciences</option>
+                <option value="Public and Private Law">
+                  Public and Private Law
+                </option>
+                <option value="Accounting And Business">
+                  Accounting And Business
+                </option>
               </select>
-            </div>
 
-            <!--//? gender and mobile number  -->
-            <div class="input_wripper">
               <select
+                onfocus="(this.type = '')"
+                name="fees_type"
                 required
-                name="gender"
-                value="Male"
-                placeholder="Gender"
+                placeholder="Fees Type*"
                 class="tw_input2"
               >
                 <option
@@ -431,65 +378,121 @@
                   hidden
                   class="text-slate-200"
                 >
-                  Gender
+                  Fees Type
                 </option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
+                <option value="Annual">Annual</option>
+                <option value="Tuition">Tuition</option>
+                <option value="Transport">Transport</option>
+                <option value="Exam">Exam</option>
+                <option value="Library">Library</option>
+                <option value="Others">Others</option>
               </select>
+            </div>
+
+            <!--//? Duration -->
+            <div class="mt-8">
               <input
-                type="tel"
+                type="radio"
+                name="duration"
+                class="hover:cursor-pointer"
+              /><span class="pl-2 text-lg">Monhly</span>
+              <input
+                type="radio"
+                name="duration"
+                class="hover:cursor-pointer ml-20"
+              /><span class="pl-2 text-lg">Yearly</span>
+              <input
+                type="radio"
+                name="duration"
+                class="hover:cursor-pointer ml-20"
+              /><span class="pl-2 text-lg">Session</span>
+            </div>
+
+            <!--//? Ammount -->
+            <div class="pt-6">
+              <input
+                type="text"
                 required
-                value="0791957080"
-                name="monile_number"
-                placeholder="Mobile Number*"
-                class="tw_input2"
+                name="ammount"
+                placeholder="Ammount"
+                class="tw_input2 py-4"
               />
             </div>
 
-            <!--//? Birth Date  -->
+            <!--//? collection date and fees type -->
             <div class="input_wripper">
               <input
                 type="text"
                 onfocus="this.type = 'date'"
                 required
-                value="2022-01-01"
-                name="birth_date"
-                placeholder="Birth Date"
+                name="collection_date"
+                placeholder="Collection Date*"
                 class="tw_input2"
               />
-              <input
-                type="text"
-                onfocus="this.type = 'file'"
+              <select
+                onfocus="(this.type = '')"
+                name="fees_type"
                 required
-                value="Upload Profile Picture"
-                name="picture"
-                placeholder="Upload Profile Picture"
-                class="tw_input2 py-4"
-              />
+                placeholder="Fees Type*"
+                class="tw_input2"
+              >
+                <option
+                  value=""
+                  disabled
+                  selected
+                  hidden
+                  class="text-slate-200"
+                >
+                  Fees Type
+                </option>
+                <option value="Annual">Annual</option>
+                <option value="Tuition">Tuition</option>
+                <option value="Transport">Transport</option>
+                <option value="Exam">Exam</option>
+                <option value="Library">Library</option>
+                <option value="Others">Others</option>
+              </select>
             </div>
 
-            <!--//? address  -->
-            <div class="pt-6">
+            <!--//? Payment status and reference number  -->
+            <div class="input_wripper">
               <input
                 type="text"
                 required
-                value="Kigali, Rwanda"
-                name="Address"
-                placeholder="Address"
-                class="tw_input2 py-4"
+                name="payment_refrenece_number"
+                placeholder="Payment Reference Number*"
+                class="tw_input2"
               />
+              <select
+                onfocus="(this.type = '')"
+                name="status"
+                required
+                placeholder="Status*"
+                class="tw_input2"
+              >
+                <option
+                  value=""
+                  disabled
+                  selected
+                  hidden
+                  class="text-slate-200"
+                >
+                  Status
+                </option>
+                <option value="Pain">Pain</option>
+                <option value="UnPaid">UnPaid</option>
+                <option value="Pending">Pending</option>
+              </select>
             </div>
 
-            <!--//? Education  -->
-            <div class="pt-6">
-              <input
-                type="text"
+            <!--//? payment Details  -->
+            <div class="mt-12">
+              <textarea
                 required
-                value="Bachelor of Science in Computer Science"
-                name="education"
-                placeholder="Education"
-                class="tw_input2 py-4"
-              />
+                name="payment_details"
+                placeholder="Payment Details*"
+                class="tw_input2"
+              ></textarea>
             </div>
 
             <!--//? submit button  -->

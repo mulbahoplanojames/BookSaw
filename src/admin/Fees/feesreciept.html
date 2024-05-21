@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="../css/output.css" />
+    <title>Add Courses</title>
+    <link rel="stylesheet" href="/src/css/output.css" />
 
     <!--//? bootstrap icons and font awesome links  -->
     <link
@@ -42,7 +42,9 @@
                 </summary>
                 <ul>
                   <li>
-                    <a href="#" class="focus:text-blue-600 text-base"
+                    <a
+                      href="/src/admin/admin-unidev-main.html"
+                      class="focus:text-blue-600 text-base"
                       >All Students</a
                     >
                   </li>
@@ -74,7 +76,7 @@
                 <ul>
                   <li>
                     <a
-                      href="/src/admin//Courses/allCourses.html"
+                      href="/src/admin/Courses/allCourses.html"
                       class="focus:text-blue-600 text-base"
                       >All Courses</a
                     >
@@ -98,7 +100,7 @@
             </li>
           </ul>
 
-          <!-- Departments Links  -->
+          <!--//? Departments Links  -->
           <ul class="menu bg-slate-100 w-full mx-auto">
             <li>
               <details onclick="open">
@@ -132,7 +134,7 @@
             </li>
           </ul>
 
-          <!-- Pro Links  -->
+          <!--//? Pro Links  -->
           <ul class="menu bg-slate-100 w-full mx-auto">
             <li>
               <details onclick="open">
@@ -142,7 +144,7 @@
                 <ul>
                   <li>
                     <a
-                      href="/src/admin/Professors/allProfessors.html"
+                      href="/src/admin/Professors/addprofessors.html"
                       class="focus:text-blue-600 text-base"
                       >All Professors</a
                     >
@@ -189,9 +191,7 @@
                     >
                   </li>
                   <li>
-                    <a
-                      href="/src/admin/Fees/feesreciept.html"
-                      class="focus:text-blue-600 text-base"
+                    <a href="#" class="focus:text-blue-600 text-base"
                       >Fees Receipt</a
                     >
                   </li>
@@ -200,7 +200,7 @@
             </li>
           </ul>
 
-          <!-- Logout  -->
+          <!--//? Logout  -->
           <ul class="menu bg-slate-100 w-full mx-auto mt-8">
             <li>
               <a
@@ -300,265 +300,118 @@
         <div
           class="breadcrumbs flex flex-wrap justify-between gap-5 px-4 pt-24 pb-10 text-sm"
         >
-          <h1 class="text-2xl">All Students</h1>
+          <h1 class="text-2xl">Student Invoice</h1>
           <ul class="bg-[#e5e5e9] rounded-full px-6 py-3 text-base">
             <li>
               <a> <i class="bi bi-house-door-fill"></i>Home</a>
             </li>
             <li>
-              <a> Students</a>
+              <a>Fees</a>
             </li>
             <li>
-              <span>All Students</span>
+              <span>Invoice</span>
             </li>
           </ul>
         </div>
 
-        <!--? The below codes are for the all students table -->
-        <div class="p-4 bg-white rounded-md w-[95%] mx-auto">
-          <h1 class="pb-3 text-base font-bold border-b-2 border-dotted">
-            All Students List
-          </h1>
+        <!--? The below codes are for the fees reciept -->
+        <div class="w-[95%] mx-auto bg-white pt-8 pb-10 rounded-xl px-5">
+          <!--//? invoice and fees reciept number -->
+          <div class="flex justify-between mb-4">
+            <h1 class="text-2xl uppercase">Invoice</h1>
+            <h1 class="text-2xl">#3495766</h1>
+          </div>
 
-          <!--//? table will go here -->
-          <div class="overflow-x-auto">
-            <table class="table">
-              <!--//? table head -->
-              <thead>
-                <tr>
-                  <th>Roll No</th>
-                  <th>Name</th>
-                  <th>Department</th>
-                  <th>Mobile</th>
-                  <th>Email</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!--//todo row 1 -->
-                <tr>
-                  <th>18</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Computer Science</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <a href="../Students/editStudents.html">
-                      <button
-                        class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                      >
-                        <i
-                          class="bi bi-pen-fill hover:text-white text-green-700"
-                        ></i>
-                      </button>
-                    </a>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
-                <!--//todo row 2 -->
-                <tr>
-                  <th>82</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Social Science</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
-                <!--//todo row 3 -->
-                <tr>
-                  <th>76</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Internation Communication</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
-                <!--//todo row 4 -->
-                <tr>
-                  <th>65</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Economics and Finance</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
+          <!--//? student details and university -->
+          <div class="flex justify-between mt-12 mb-8">
+            <!--! div one  -->
+            <div class="">
+              <h1 class="pb-1 text-3xl uppercase">Uni!dev</h1>
+              <p class="opacity-45">Team University</p>
+              <p class="opacity-45">Gisozi,Kigali</p>
+              <p class="opacity-45">Rwanda, KG 9788</p>
+              <p class="opacity-45">Ahmedabad - 380015</p>
+            </div>
 
-                <!--//todo row 5 -->
-                <tr>
-                  <th>43</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Engineering science</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
+            <!--! div two  -->
+            <div class="">
+              <h1 class="pb-1 text-2xl">TO,</h1>
+              <h1 class="pb-3 text-lg font-bold">Christine Sankely</h1>
+              <p class="opacity-45">207, Prem Sagar Appt.,</p>
+              <p class="opacity-45">Near Income Tax Office</p>
+              <p class="opacity-45">Ashram Road,</p>
+              <p class="opacity-45 pb-3">Ahmedabad - 380057</p>
+              <p class="pb-3">
+                <span class="font-bold">Invoice Date :</span>
+                <i class="bi bi-calendar pl-1"></i> 14th July 2017
+              </p>
+              <p><span class="font-bold">Course</span> : Engineering</p>
+            </div>
+          </div>
 
-                <!--//todo row 6 -->
-                <tr>
-                  <th>98</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Law Science</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
+          <!--//? reciept table code -->
+          <table class="table">
+            <!--//? table head -->
+            <thead>
+              <tr>
+                <th class="text-xl font-bold">#</th>
+                <th class="text-lg font-bold">Fees Type</th>
+                <th class="text-lg font-bold">Frequency</th>
+                <th class="text-lg font-bold">Date</th>
+                <th class="text-lg font-bold">Invoice number</th>
+                <th class="text-lg font-bold">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!--//todo row 1 -->
+              <tr>
+                <th>1</th>
+                <td>Annual Fees</td>
+                <td>Yearly</td>
+                <td>2023-11-23</td>
+                <td>IN-5645644</td>
+                <td>$340</td>
+              </tr>
+              <!--//todo row 2 -->
+              <tr>
+                <th>2</th>
+                <td>Tuition Fees</td>
+                <td>Yearly</td>
+                <td>2023-11-23</td>
+                <td>IN-5645644</td>
+                <td>$340</td>
+              </tr>
+              <!--//todo row 3 -->
+              <tr>
+                <th>1</th>
+                <td>Annual Fees</td>
+                <td>Yearly</td>
+                <td>2023-11-23</td>
+                <td>IN-5645644</td>
+                <td>$340</td>
+              </tr>
+            </tbody>
+          </table>
 
-                <!--//todo row 7 -->
-                <tr>
-                  <th>34</th>
-                  <td>
-                    <div class="avatar">
-                      <div class="mask mask-squircle w-12 h-12">
-                        <img
-                          src="https://img.daisyui.com/tailwind-css-component-profile-2@56w.png"
-                          alt="Student image"
-                        />
-                      </div>
-                    </div>
-                  </td>
-                  <td>Business Studies</td>
-                  <td>+25079167552</td>
-                  <td>student@gmail.com</td>
-                  <th>
-                    <button
-                      class="hover:bg-green-800 px-2 py-1 mr-1 bg-green-400 rounded-lg"
-                    >
-                      <i
-                        class="bi bi-pen-fill hover:text-white text-green-700"
-                      ></i>
-                    </button>
-                    <button
-                      class="hover:bg-red-500 px-2 py-1 bg-red-400 rounded-lg"
-                    >
-                      <i class="bi bi-trash3 text-red-700"></i>
-                    </button>
-                  </th>
-                </tr>
-              </tbody>
-            </table>
+          <!--//? total amount -->
+          <div class="text-end mt-3">
+            <p class="pb-4 text-base">Sub - Total amount: $150</p>
+            <p class="pb-4 text-base">Discount : $10</p>
+            <p class="pb-12 text-base">Tax (10%) : $14</p>
+            <p class="text-2xl font-semibold">Total : $164</p>
+          </div>
+
+          <!--// Button to print reciept -->
+          <div class="mt-6">
+            <button class="px-2 py-1 rounded-md bg-[#ff6680] text-white">
+              Proceed to Payment
+            </button>
+            <button
+              class="px-2 py-1 rounded-md bg-[#44dcbe] text-white"
+              onclick="window.print()"
+            >
+              Print Reciept
+            </button>
           </div>
         </div>
 

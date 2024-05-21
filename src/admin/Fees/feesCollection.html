@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add Departments</title>
-    <link rel="stylesheet" href="../css/output.css" />
+    <title>Fees Collection</title>
+    <link rel="stylesheet" href="/src/css/output.css" />
 
     <!--//? bootstrap icons and font awesome links  -->
     <link
@@ -43,21 +43,21 @@
                 <ul>
                   <li>
                     <a
-                      href="../admin/admin-unidev-main.html"
+                      href="/src/admin/admin-unidev-main.html"
                       class="focus:text-blue-600 text-base"
                       >All Students</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Students/addStudents.html"
+                      href="/src/admin/Students/addStudents.html"
                       class="focus:text-blue-600 text-base"
                       >Add Student</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Students/editStudents.html"
+                      href="/src/admin/Students/editStudents.html"
                       class="focus:text-blue-600 text-base"
                       >Edit Student</a
                     >
@@ -76,21 +76,21 @@
                 <ul>
                   <li>
                     <a
-                      href="../Courses/allCourses.html"
+                      href="/src/admin/Courses/allCourses.html"
                       class="focus:text-blue-600 text-base"
                       >All Courses</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Courses/addCourse.html"
+                      href="/src/admin/Courses/addCourse.html"
                       class="focus:text-blue-600 text-base"
                       >Add Courses</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Courses/editCourses.html"
+                      href="/src/admin/Courses/editCourses.html"
                       class="focus:text-blue-600 text-base"
                       >Edit Courses</a
                     >
@@ -110,20 +110,22 @@
                 <ul>
                   <li>
                     <a
-                      href="../Departments/allDepartments.html"
+                      href="/src/admin/Departments/allDepartments.html"
                       class="focus:text-blue-600 text-base"
                       >All Departments</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Departments/addDepartments.html"
+                      href="/src/admin/Departments/addDepartments.html"
                       class="focus:text-blue-600 text-base"
                       >Add Departments</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="focus:text-blue-600 text-base"
+                    <a
+                      href="/src/admin/Departments/editDepartments.html"
+                      class="focus:text-blue-600 text-base"
                       >Edit Departments</a
                     >
                   </li>
@@ -142,21 +144,21 @@
                 <ul>
                   <li>
                     <a
-                      href="../Professors/allProfessors.html"
+                      href="/src/admin/Professors/addprofessors.html"
                       class="focus:text-blue-600 text-base"
                       >All Professors</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Professors/addprofessors.html"
+                      href="/src/admin/Professors/addprofessors.html"
                       class="focus:text-blue-600 text-base"
                       >Add Professors</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Professors/editProfessors.html"
+                      href="/src/admin/Professors/editProfessors.html"
                       class="focus:text-blue-600 text-base"
                       >Edit Professors</a
                     >
@@ -175,22 +177,20 @@
                 </summary>
                 <ul>
                   <li>
-                    <a
-                      href="../Fees/feesCollection.html"
-                      class="focus:text-blue-600 text-base"
+                    <a href="#" class="focus:text-blue-600 text-base"
                       >Fees Collection</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Fees/addFees.html"
+                      href="/src/admin/Fees/addFees.html"
                       class="focus:text-blue-600 text-base"
                       >Add Fees</a
                     >
                   </li>
                   <li>
                     <a
-                      href="../Fees/feesreciept.html"
+                      href="/src/admin/Fees/feesreciept.html"
                       class="focus:text-blue-600 text-base"
                       >Fees Receipt</a
                     >
@@ -212,8 +212,9 @@
           </ul>
         </div>
       </aside>
+      <!--//? side bar ends here  -->
 
-      <!--//? The below codes are for the main content section  -->
+      <!--//! The below codes are for the main content section  -->
       <div class="bg-[#eaeef3] col-span-10 overflow-y-auto">
         <!--//? nav bar  -->
         <div class="navbar fixed justify-between w-[83%] top-0 bg-white z-30">
@@ -300,98 +301,175 @@
         <div
           class="breadcrumbs flex flex-wrap justify-between gap-5 px-4 pt-24 pb-10 text-sm"
         >
-          <h1 class="text-2xl">Edit Departments</h1>
+          <h1 class="text-2xl">Departments List</h1>
           <ul class="bg-[#e5e5e9] rounded-full px-6 py-3 text-base">
             <li>
               <a> <i class="bi bi-house-door-fill"></i>Home</a>
             </li>
             <li>
-              <a>Departments</a>
+              <a> Departments</a>
             </li>
             <li>
-              <span>Edit Departments</span>
+              <span>All Departments</span>
             </li>
           </ul>
         </div>
 
-        <!--? The below codes are for the Edit Department form -->
-        <div class="w-[95%] mx-auto bg-white pt-5 pb-10 rounded-xl mb-10">
-          <h1 class="pb-3 pl-6 text-xl border-b-2 border-dotted">
-            Edit Departments
+        <!--? The below codes are for the all students table -->
+        <div class="p-4 bg-white rounded-md w-[95%] mx-auto mb-6">
+          <h1 class="pb-3 text-base font-bold border-b-2 border-dotted">
+            Departments List
           </h1>
 
-          <form method="post" class="px-5">
-            <!--//? Department name and Head  -->
-            <div class="input_wripper">
-              <input
-                type="text"
-                required
-                value="Computer Science"
-                name="department_name"
-                placeholder="Department Name*"
-                class="tw_input2"
-              />
-              <input
-                type="text"
-                required
-                value="Dr. Wilma Williams"
-                name="hod"
-                placeholder="Head Od Department*"
-                class="tw_input2"
-              />
-            </div>
+          <!--//? add button  -->
+          <a
+            href="../Departments/addDepartments.html"
+            class="inline-block px-3 py-1 mt-5 mb-6 text-base text-white bg-blue-400 rounded-md"
+          >
+            Add New +
+          </a>
 
-            <!--//? Course time length and start date -->
-            <div class="input_wripper">
-              <input
-                type="text"
-                required
-                value="4 Years"
-                name="student_capacity"
-                placeholder="Student Capacity*"
-                class="tw_input2"
-              />
-              <input
-                type="text"
-                required
-                value="01-01-2022"
-                name="start_date"
-                onfocus="(this.type = 'datetime-local')"
-                placeholder="Department Start From*"
-                class="tw_input2"
-              />
-            </div>
+          <!--//? table will go here -->
+          <div class="mt-5 overflow-x-auto">
+            <table class="table">
+              <!--//? table head -->
+              <thead>
+                <tr>
+                  <th>Roll No</th>
+                  <th>Student Name</th>
+                  <th>Fees Type</th>
+                  <th>Date</th>
+                  <th>Invoice number</th>
+                  <th>Payment Type</th>
+                  <th>Status</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!--//todo row 1 -->
+                <tr>
+                  <th>1</th>
+                  <td>Dr. Oplano Mulbah</td>
+                  <td>Annual</td>
+                  <td>12 Jan 2012</td>
+                  <td>IN-5645644</td>
+                  <td>cash</td>
+                  <th>
+                    <button
+                      class="px-2 py-1 rounded-md bg-[#44dcbe] text-white"
+                    >
+                      Paid
+                    </button>
+                  </th>
+                  <td>340$</td>
+                </tr>
+                <!--//todo row 2 -->
+                <tr>
+                  <th>1</th>
+                  <td>Dr. Oplano Mulbah</td>
+                  <td>Tuition</td>
+                  <td>12 Jan 2012</td>
+                  <td>IN-5645644</td>
+                  <td>cheque</td>
+                  <th>
+                    <button
+                      class="px-2 py-1 rounded-md bg-[#ffc169] text-white"
+                    >
+                      Pending
+                    </button>
+                  </th>
+                  <td>540$</td>
+                </tr>
+                <!--//todo row 3 -->
+                <tr>
+                  <th>1</th>
+                  <td>Dr. Oplano Mulbah</td>
+                  <td>Transport</td>
+                  <td>12 Jan 2012</td>
+                  <td>IN-5645644</td>
+                  <td>credit card</td>
+                  <th>
+                    <button
+                      class="px-2 py-1 rounded-md bg-[#ff6680] text-white"
+                    >
+                      UnPaid
+                    </button>
+                  </th>
+                  <td>340$</td>
+                </tr>
+                <!--//todo row 4 -->
+                <tr>
+                  <th>1</th>
+                  <td>Dr. Oplano Mulbah</td>
+                  <td>Annual</td>
+                  <td>12 Jan 2012</td>
+                  <td>IN-5645644</td>
+                  <td>cash</td>
+                  <th>
+                    <button
+                      class="px-2 py-1 rounded-md bg-[#44dcbe] text-white"
+                    >
+                      Paid
+                    </button>
+                  </th>
+                  <td>340$</td>
+                </tr>
 
-            <!--//? Department details -->
-            <div class="pt-6">
-              <input
-                type="text"
-                required
-                value="Computer Science and Engineering"
-                name="course_details"
-                placeholder="Course Details"
-                class="tw_input2 py-4"
-              />
-            </div>
+                <!--//todo row 5 -->
+                <tr>
+                  <th>1</th>
+                  <td>Dr. Oplano Mulbah</td>
+                  <td>Tuition</td>
+                  <td>12 Jan 2012</td>
+                  <td>IN-5645644</td>
+                  <td>cheque</td>
+                  <th>
+                    <button
+                      class="px-2 py-1 rounded-md bg-[#ffc169] text-white"
+                    >
+                      Pending
+                    </button>
+                  </th>
+                  <td>540$</td>
+                </tr>
 
-            <!--//? submit button  -->
-            <div class="text-center">
-              <button
-                type="submit"
-                class="bg-primary px-14 hover:opacity-70 py-1 mt-6 mr-5 text-lg text-white rounded-md"
-              >
-                Submit
-              </button>
-
-              <button
-                class="px-14 hover:opacity-70 py-1 mt-6 text-lg text-white bg-red-600 rounded-md"
-              >
-                Cancel
-              </button>
-            </div>
-
-            <div class="" id="result"></div>
-          </form>
+                <!--//todo row 6 -->
+                <tr>
+                  <th>1</th>
+                  <td>Dr. Oplano Mulbah</td>
+                  <td>Annual</td>
+                  <td>12 Jan 2012</td>
+                  <td>IN-5645644</td>
+                  <td>cash</td>
+                  <th>
+                    <button
+                      class="px-2 py-1 rounded-md bg-[#44dcbe] text-white"
+                    >
+                      Paid
+                    </button>
+                  </th>
+                  <td>340$</td>
+                </tr>
+                <!--//todo row 7 -->
+                <tr>
+                  <th>1</th>
+                  <td>Dr. Oplano Mulbah</td>
+                  <td>Annual</td>
+                  <td>12 Jan 2012</td>
+                  <td>IN-5645644</td>
+                  <td>cash</td>
+                  <th>
+                    <button
+                      class="px-2 py-1 rounded-md bg-[#44dcbe] text-white"
+                    >
+                      Paid
+                    </button>
+                  </th>
+                  <td>340$</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <!--? the main content ends here -->
