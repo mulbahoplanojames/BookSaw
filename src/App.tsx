@@ -1,5 +1,13 @@
+import Navbar from "./Layouts/Navbar/Navbar";
+import NavHeader from "./Layouts/NavHeader/NavHeader";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <NavHeader />
+      <Navbar />
+    </>
+  );
 };
 
 export default App;
