@@ -1,23 +1,29 @@
+import client_1 from "/src/assets/client-image1.png";
+import client_2 from "/src/assets/client-image2.png";
+import client_3 from "/src/assets/client-image3.png";
+import client_4 from "/src/assets/client-image4.png";
+import client_5 from "/src/assets/client-image5.png";
+
 const clients = [
   {
     id: 1,
-    image: "/src/assets/client-image1.png",
+    image: client_1,
   },
   {
     id: 2,
-    image: "/src/assets/client-image2.png",
+    image: client_2,
   },
   {
     id: 3,
-    image: "/src/assets/client-image3.png",
+    image: client_3,
   },
   {
     id: 4,
-    image: "/src/assets/client-image4.png",
+    image: client_4,
   },
   {
     id: 5,
-    image: "/src/assets/client-image5.png",
+    image: client_5,
   },
 ];
 
