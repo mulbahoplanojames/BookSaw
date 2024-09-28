@@ -1,10 +1,12 @@
+import productImg from "/src/assets/single-image.jpg";
+
 const BestSellingBooks = () => {
   return (
     <>
       <section className="md:px-20 px-4 md:py-28 py-16 bg-s1 grid md:grid-cols-2 grid-cols-1 gap-8 gap-y-16">
         <div className="w-full h-[400px]">
           <img
-            src="/src/assets/single-image.jpg"
+            src={productImg}
             className="w-full h-full object-contain"
             alt=""
           />

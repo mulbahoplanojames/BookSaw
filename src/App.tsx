@@ -1,4 +1,6 @@
+import Articles from "./components/Articles";
 import BestSellingBooks from "./components/BestSellingBooks";
+import DownloadApp from "./components/DownloadApp";
 import FeaturedBooks from "./components/FeaturedBooks";
 import Hero from "./components/Hero";
 import OfferBooks from "./components/OfferBooks";
@@ -18,6 +20,8 @@ const App = () => {
       <BestSellingBooks />
       <PopularBooks />
       <OfferBooks />
+      <Articles />
+      <DownloadApp />
     </>
   );
 };

@@ -175,3 +175,28 @@ export const OfferBooksData: FeatureBooksTypes[] = [
     price: 10.99,
   },
 ];
+
+// ---------------------------------------------------------------------------------
+// Article data
+
+import articleImg_1 from "/src/assets/post-img1.jpg";
+import articleImg_2 from "/src/assets/post-img2.jpg";
+import articleImg_3 from "/src/assets/post-img3.jpg";
+
+export const ArticlesData = [
+  {
+    date: "March 24, 2023",
+    title: "Reading books always makes the moments happy",
+    image: articleImg_1,
+  },
+  {
+    date: "March 24, 2024",
+    title: "Reading books always makes the moments happy",
+    image: articleImg_2,
+  },
+  {
+    date: "March 4, 2024",
+    title: "Reading books always makes the moments happy",
+    image: articleImg_3,
+  },
+];

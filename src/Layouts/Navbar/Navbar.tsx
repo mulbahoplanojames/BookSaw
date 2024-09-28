@@ -95,7 +95,7 @@ const Navbar = () => {
       {/*//! Responsive menu for smaller devices */}
       {isMenuOpen && (
         <div>
-          <nav className="lg:bottom-auto bg-primary fixed top-[11rem] bottom-10 left-0 right-0 z-50">
+          <nav className="lg:bottom-auto bg-[#88846a] fixed top-[11rem] bottom-10 left-0 right-0 z-50">
             {/* Close button for the menu */}
             <div
               className="max-lg:block fixed right-0 hidden px-8 py-4 cursor-pointer"
@@ -108,31 +108,24 @@ const Navbar = () => {
             <ul className=" lg:hidden bg-1 gap-y-7 z-40 flex flex-col items-center justify-center h-full">
               {/* Menu items for smaller devices */}
               {navLinks.map((navlink) => (
-                <li
-                  key={navlink.label}
-                  onClick={() => {
-                    setIsMenuOpen(!isMenuOpen);
-                    window.scrollTo(0, 8000);
-                  }}
-                >
-                  <a
-                    href={navlink.path}
+                <li key={navlink.label}>
+                  <Link
+                    to={navlink.path}
                     className="font-montserrat active:text-black text-2xl leading-normal text-white"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onSetActive={handleSetActive}
+                    onClick={() => {
+                      setIsMenuOpen(!isMenuOpen);
+                    }}
                   >
                     {navlink.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
-              <Link
-                to="/sign-up"
-                className="py-1.5 lg:px-4 px-5 border-[1px] border-white text-xl lg:text-lg rounded-3xl text-white hover:opacity-50"
-                onClick={() => {
-                  setIsMenuOpen(!isMenuOpen);
-                  window.scrollTo(0, 8000);
-                }}
-              >
-                sign in
-              </Link>
             </ul>
           </nav>
         </div>

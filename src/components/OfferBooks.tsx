@@ -18,7 +18,7 @@ const OfferBooks = () => {
           Books with offer
         </h2>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 gap-y-10 place-items-center">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 gap-y-10  place-items-center">
           {OfferBooksData.map((book) => (
             <Card
               className="px-4 py-5 bg-transparent w-full text-center group transition-all duration-300"
