@@ -5,9 +5,9 @@ import {
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
-import { featuredBooks } from "@/Data/Data";
+// import { featuredBooks } from "@/Data/Data";
 
-const FeaturedBooks = () => {
+const PopularBooks = () => {
   return (
     <>
       <section className="bg-p1 md:px-20 px-4 md:py-12 py-10">
@@ -15,10 +15,10 @@ const FeaturedBooks = () => {
           Some quality items
         </p>
         <h2 className="md:text-5xl text-4xl pb-8  text-center">
-          Featured Books
+          Popular Books
         </h2>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 gap-y-10 place-items-center">
+        {/* <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 gap-y-10 place-items-center">
           {featuredBooks.map((book) => (
             <Card
               className="px-4 py-5 bg-transparent w-full text-center group transition-all duration-300"
@@ -39,10 +39,10 @@ const FeaturedBooks = () => {
               </Button>
             </Card>
           ))}
-        </div>
+        </div> */}
       </section>
     </>
   );
 };
 
-export default FeaturedBooks;
+export default PopularBooks;
