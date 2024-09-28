@@ -10,7 +10,7 @@ import { featuredBooks } from "@/Data/Data";
 const FeaturedBooks = () => {
   return (
     <>
-      <section className="bg-p1 md:px-20 px-4 md:py-12 py-10">
+      <section className="bg-p1 md:px-20 px-4 md:py-12 py-10" id="/featured">
         <p className="text-lg text-slate-400 uppercase text-center pb-5">
           Some quality items
         </p>

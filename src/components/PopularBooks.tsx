@@ -10,17 +10,17 @@ import { useState } from "react";
 // import { featuredBooks } from "@/Data/Data";
 
 const PopularBooks = () => {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("all Genre");
 
   // Create a list of unique categories from popularBooksData
   const categories = [
-    "all",
+    "all Genre",
     ...new Set(popularBooksData.map((project) => project.category)),
   ];
 
   // Function to filter projects based on selected category
   const filteredProjects =
-    selectedCategory === "all"
+    selectedCategory === "all Genre"
       ? popularBooksData
       : popularBooksData.filter(
           (project) => project.category === selectedCategory
@@ -28,7 +28,7 @@ const PopularBooks = () => {
 
   return (
     <>
-      <section className="bg-p1 md:px-20 px-4 md:py-16 py-12">
+      <section className="bg-p1 md:px-20 px-4 md:py-16 py-12" id="/popular">
         <p className="text-lg text-slate-400 uppercase text-center pb-5">
           Some quality items
         </p>
@@ -69,6 +69,17 @@ const PopularBooks = () => {
               </Button>
             </Card>
           ))}
+        </div>
+
+        <div className="text-center py-28 md:px-20 px-4">
+          <h1 className="capitalize md:text-5xl text-3xl pb-8">
+            Quote of the Day
+          </h1>
+          <p className="md:text-2xl text-xl lg:px-[17rem] pr-0 pb-6 md:leading-loose leading-10">
+            “The more that you read, the more things you will know. The more
+            that you learn, the more places you’ll go.”
+          </p>
+          <p className="md:text-2xl text-xl text-[#88846a]">Dr. Seuss</p>
         </div>
       </section>
     </>

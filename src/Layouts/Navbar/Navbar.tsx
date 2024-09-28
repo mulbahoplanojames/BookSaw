@@ -1,16 +1,44 @@
-import { useState } from "react";
-import { Link } from "react-scroll";
+import { useEffect, useState } from "react";
+import { Link, Events, animateScroll as scroll, scrollSpy } from "react-scroll";
 import navLinks from "../../Data/Data";
 import { Menu, X } from "lucide-react";
 
-/**
- * The Navbar component renders the navigation bar of this website.
- * It contains links to different pages and a sign in button.
- * It also has a responsive menu for smaller devices.
- */
 const Navbar = () => {
   // State variable to keep track of whether the menu is open or not.
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Registering the 'begin' event and logging it to the console when triggered.
+    const handleBegin = (to: string, element: HTMLElement) => {
+      console.log("begin", to, element);
+    };
+    Events.scrollEvent.register("begin", handleBegin);
+
+    // Registering the 'end' event and logging it to the console when triggered.
+    const handleEnd = (to: string, element: HTMLElement) => {
+      console.log("end", to, element);
+    };
+    Events.scrollEvent.register("end", handleEnd);
+
+    // Updating scrollSpy when the component mounts.
+    scrollSpy.update();
+
+    // Returning a cleanup function to remove the registered events when the component unmounts.
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
+
+  // Defining functions to perform different types of scrolling.
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
+  // Function to handle the activation of a link.
+  const handleSetActive = (to: string) => {
+    console.log(to);
+  };
 
   return (
     <>
@@ -18,7 +46,17 @@ const Navbar = () => {
         className={`flex justify-between items-center bg-p1  py-4 md:px-10 px-4 border-y border-slate-400 fixed z-50 w-full md:top-[4.2rem] top-[7.7rem]`}
       >
         {/* Link to the home page */}
-        <Link to="/" className={`text-2xl font-bold  uppercase`}>
+        <Link
+          to="/"
+          className={`text-2xl font-bold  uppercase cursor-pointer`}
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={scrollToTop}
+          onSetActive={scrollToTop}
+        >
           Book<span className="font-thin">Saw</span>
         </Link>
         {/*//! Menu items for larger devices and mapping through the links */}
@@ -29,7 +67,12 @@ const Navbar = () => {
                 <Link
                   to={navlink.path}
                   className={`font-montserrat focus:text-primary text-base leading-normal text-slate-600 uppercase hover:text-primary hover:cursor-pointer`}
-                  onClick={() => window.scrollTo(0, 0)}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  onSetActive={handleSetActive}
                 >
                   {navlink.label}
                 </Link>
