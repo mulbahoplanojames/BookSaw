@@ -148,3 +148,30 @@ export const popularBooksData: PopularBooksTypes[] = [
     category: "Romatic",
   },
 ];
+
+// ------------------------------------------------------------------------------------
+// Offer Books Data
+
+export const OfferBooksData: FeatureBooksTypes[] = [
+  {
+    id: 1,
+    title: "Simple way of piece life",
+    author: "Armor Ramsey",
+    image: productImg_1,
+    price: 10.99,
+  },
+  {
+    id: 2,
+    title: "Great travel at deserte",
+    author: "Sanchit Howdy",
+    image: productImg_2,
+    price: 34.9,
+  },
+  {
+    id: 3,
+    title: "The lady beauty Scarlett",
+    author: "Arthur Doyle",
+    image: productImg_3,
+    price: 10.99,
+  },
+];

@@ -1,3 +1,5 @@
+import heroImg from "/src/assets/main-banner1.jpg";
+
 const Hero = () => {
   return (
     <>
@@ -18,7 +20,7 @@ const Hero = () => {
           </button>
         </div>
         <div className="md:h-[35rem] h-[30rem] w-full overflow-hidden md:w-[80%]">
-          <img src="src/assets/main-banner1.jpg" alt="" className="w-full" />
+          <img src={heroImg} alt="HeeroImg" className="w-full" />
         </div>
       </section>
     </>

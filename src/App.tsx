@@ -1,6 +1,7 @@
 import BestSellingBooks from "./components/BestSellingBooks";
 import FeaturedBooks from "./components/FeaturedBooks";
 import Hero from "./components/Hero";
+import OfferBooks from "./components/OfferBooks";
 import Partners from "./components/Partners";
 import PopularBooks from "./components/PopularBooks";
 import Navbar from "./Layouts/Navbar/Navbar";
@@ -16,6 +17,7 @@ const App = () => {
       <FeaturedBooks />
       <BestSellingBooks />
       <PopularBooks />
+      <OfferBooks />
     </>
   );
 };

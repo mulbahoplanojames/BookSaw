@@ -71,7 +71,7 @@ const PopularBooks = () => {
           ))}
         </div>
 
-        <div className="text-center py-28 md:px-20 px-4">
+        <div className="text-center pt-28 md:px-20 px-4">
           <h1 className="capitalize md:text-5xl text-3xl pb-8">
             Quote of the Day
           </h1>
