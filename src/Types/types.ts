@@ -12,3 +12,12 @@ export interface FeatureBooksTypes {
   image: string;
   price: number;
 }
+
+export interface PopularBooksTypes {
+  id: number;
+  title: string;
+  author: string;
+  image: string;
+  price: number;
+  category: string;
+}
