@@ -202,34 +202,25 @@ export const ArticlesData = [
 ];
 
 export const SolutionsData = [
-  "Website Design",
-  "App Development",
-  "UI/UX Design",
-  "Graphic Design",
+  "vision",
+  "articles ",
+  "carrers",
+  "service terms",
 ];
 
 export const CompanyData = [
   {
-    label: "Service",
-    path: "/services",
+    label: "Sign In",
+    path: "#",
   },
   {
-    label: "Portfolio",
-    path: "/portfolio",
+    label: "View Chat",
+    path: "#",
   },
   {
-    label: "About",
+    label: "Track My Order",
     path: "/about",
-  },
-  {
-    label: "Testimonials",
-    path: "/testimonials",
   },
 ];
 
-export const SupportData = [
-  "Help Center",
-  "Terms of Service",
-  "Legal",
-  "Privacy Policy",
-];
+export const SupportData = ["Home", "Books", "Authors", "Subjects"];
