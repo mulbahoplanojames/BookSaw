@@ -1,7 +1,6 @@
 import AppImg from "/src/assets/device.png";
 import gooplePlay from "/src/assets/google-play.jpg";
 import appStore from "/src/assets/app-store.jpg";
-import { Link } from "react-router-dom";
 
 const DownloadApp = () => {
   return (
