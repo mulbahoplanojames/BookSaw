@@ -13,7 +13,7 @@ const Articles = () => {
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 gap-y-10">
           {ArticlesData.map((article) => (
-            <div className="group" key={article.title}>
+            <div className="group" key={article.id}>
               <div className="w-full h-[300px]   ">
                 <img
                   src={article.image}

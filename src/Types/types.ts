@@ -21,3 +21,10 @@ export interface PopularBooksTypes {
   price: number;
   category: string;
 }
+
+export interface ArticleTypes {
+  id: number;
+  date: string;
+  title: string;
+  image: string;
+}

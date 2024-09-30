@@ -1,4 +1,5 @@
 import NavLinksTypes, {
+  ArticleTypes,
   FeatureBooksTypes,
   PopularBooksTypes,
 } from "@/Types/types";
@@ -183,18 +184,21 @@ import articleImg_1 from "/src/assets/post-img1.jpg";
 import articleImg_2 from "/src/assets/post-img2.jpg";
 import articleImg_3 from "/src/assets/post-img3.jpg";
 
-export const ArticlesData = [
+export const ArticlesData: ArticleTypes[] = [
   {
+    id: 1,
     date: "March 24, 2023",
     title: "Reading books always makes the moments happy",
     image: articleImg_1,
   },
   {
+    id: 2,
     date: "March 24, 2024",
     title: "Reading books always makes the moments happy",
     image: articleImg_2,
   },
   {
+    id: 3,
     date: "March 4, 2024",
     title: "Reading books always makes the moments happy",
     image: articleImg_3,

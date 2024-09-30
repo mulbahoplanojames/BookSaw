@@ -1,6 +1,7 @@
 import AppImg from "/src/assets/device.png";
 import gooplePlay from "/src/assets/google-play.jpg";
 import appStore from "/src/assets/app-store.jpg";
+import { Link } from "react-router-dom";
 
 const DownloadApp = () => {
   return (
@@ -43,6 +44,17 @@ const DownloadApp = () => {
             </div>
           </div>
         </div>
+
+        {/* made with love  */}
+        <a href="https://techspace-one.vercel.app/" target="_blank">
+          <div
+            className="fixed bottom-10 right-4 p-2 rounded-md bg-white text-base cursor-pointer"
+            title="Visit our website"
+          >
+            made ❤️<span className="text-blue-800"> Techspace</span>
+            <p>Build your website today</p>
+          </div>
+        </a>
       </section>
     </>
   );
