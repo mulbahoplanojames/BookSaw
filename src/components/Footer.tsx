@@ -36,7 +36,7 @@ const Footer = () => {
                       <li key={item}>
                         <Link
                           to="#"
-                          className="text-base text-gray-300 hover:text-white"
+                          className="text-base text-slate-900 hover:text-slate-400"
                         >
                           {item}
                         </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
                       <li key={item.label}>
                         <Link
                           to={""}
-                          className="text-base text-gray-300 hover:text-white"
+                          className="text-base text-slate-900 hover:text-slate-400"
                         >
                           {item.label}
                         </Link>
